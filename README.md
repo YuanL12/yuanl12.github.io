@@ -8,4 +8,4 @@ A Github Pages template for academic websites. This was forked (then detached) b
 1. CV is in yuanl12.github.io/_pages/cv.md
 2. Navigation Bar is in yuanl12.github.io/_data/navigation.yml
 3. Front page of yuanl12.github.io is in yuanl12.github.io/_pages/about.md
-4. To include picture in a `md` file, use this form ![Editing a markdown file for a talk](/images/editing-talk.png)
+4. To include a picture in a `md` file, use this form ![Editing a markdown file for a talk](/images/editing-talk.png)
