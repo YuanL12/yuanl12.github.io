@@ -48,3 +48,6 @@ It will be slow on some large datasets. Most functions are/will be implemented i
 conda install pytorch=1.1 -c pytorch
 pip install git+https://github.com/bruel-gabrielsson/TopologyLayer.git
 ```
+
+## Repository
+This [repository](https://github.com/YuanL12/yuanl12.github.io) is forked from [AcademicPages GitHub Pages template](https://github.com/academicpages/academicpages.github.io). 
