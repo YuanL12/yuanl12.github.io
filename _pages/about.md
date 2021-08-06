@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "General Information about me"
+title: "Yuan Luo"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
