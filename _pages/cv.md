@@ -16,7 +16,8 @@ Education
 * M.S. in Computational and Applied Mathematics, University of Chicago, 2020 - 2022(expected)
 <!-- * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
  -->
-Work experience
+
+<!-- Research experience
 ======
 * Summer 2015: Research Assistant
   * Github University
@@ -26,7 +27,7 @@ Work experience
 * Fall 2015: Research Assistant
   * Github University
   * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  * Supervisor: Professor Hub -->
   
 Skills
 ======
