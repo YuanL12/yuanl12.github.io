@@ -6,7 +6,6 @@ redirect_from:
   - /about.html
 ---
 
-# About me
 Yuan Luo is a Master student in the [Committee on Computational and Applied Mathematics](https://cam.uchicago.edu/) at the University of Chicago. He is interested in topological data analysis (TDA), scientific computation and machine learning.
 
 
