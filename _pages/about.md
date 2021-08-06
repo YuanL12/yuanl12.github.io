@@ -6,11 +6,11 @@ redirect_from:
   - /about.html
 ---
 
-Yuan Luo is a Master student in the [Committee on Computational and Applied Mathematics](https://cam.uchicago.edu/) at the University of Chicago. He is interested in topological data analysis (TDA), scientific computation and machine learning.
+I am a Master student in the [Committee on Computational and Applied Mathematics](https://cam.uchicago.edu/) at the University of Chicago. I am interested in topological data analysis(TDA), scientific computation and machine learning.
 
 
 ## TDA Packages
-Topological data analysis (TDA) is new applied mathematics area that attracts a lot of scientists. There are many packages useful online for you to perform computation. I will list some of them below with their installation recommendation:
+Topological data analysis(TDA) is new applied mathematics area that attracts a lot of scientists. There are many packages useful online for you to perform computation. I will list some of them below with their installation recommendation:
 
 Frist I recommend use python with version 3.7
 `conda create -n bats python=3.7`
