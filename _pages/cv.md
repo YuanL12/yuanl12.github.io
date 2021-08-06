@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * B.S. in Applied Mathematics, Xi'an Jiaotong-Liverpool University, 2016 - 2020
-* Visiting Student, Michigan State University 2018 - 2019
+* Visiting Student, Michigan State University, 2018 - 2019
 * M.S. in Computational and Applied Mathematics, University of Chicago, 2020 - 2022(expected)
 <!-- * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
  -->
