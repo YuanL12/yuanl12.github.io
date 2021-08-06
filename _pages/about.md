@@ -13,7 +13,7 @@ Yuan Luo is a Master student in the [Committee on Computational and Applied Math
 
 
 ## TDA Packages
-Topological data analysis (TDA) is new applied mathematics area that attracts a lot of scientists. There are many packages useful online for you to perform computation. I will list some of them below with their intallation recommendation:
+Topological data analysis (TDA) is new applied mathematics area that attracts a lot of scientists. There are many packages useful online for you to perform computation. I will list some of them below with their installation recommendation:
 
 Frist I recommend use python with version 3.7
 `conda create -n bats python=3.7`
