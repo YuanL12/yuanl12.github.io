@@ -11,10 +11,11 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-
+* B.S. in Applied Mathematics, Xi'an Jiaotong-Liverpool University, 2016 - 2020
+* Visiting Student, Michigan State University 2018 - 2019
+* M.S. in Computational and Applied Mathematics, University of Chicago, 2020 - 2022(expected)
+<!-- * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+ -->
 Work experience
 ======
 * Summer 2015: Research Assistant
@@ -29,12 +30,9 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Python
+  * Pandas, Numpy and Pytorch  
+* C++
 
 Publications
 ======
@@ -42,7 +40,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
@@ -56,4 +54,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
