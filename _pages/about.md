@@ -1,7 +1,5 @@
 ---
 permalink: /
-<!-- title: "Yuan Luo" -->
-excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
