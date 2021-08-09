@@ -43,7 +43,7 @@ pip install Ripser
 ```
 
 - **TopologyLayer**
-It will be slow on some large datasets. Most functions are/will be implemented in [BATS.py](https://bnels.github.io/BATS.py/#/installation).
+It will be slow on some large datasets. Most functions are/will be implemented by [BATS.py](https://bnels.github.io/BATS.py/#/installation).
 ```
 conda install pytorch=1.1 -c pytorch
 pip install git+https://github.com/bruel-gabrielsson/TopologyLayer.git
