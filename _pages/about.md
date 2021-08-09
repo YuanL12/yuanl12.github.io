@@ -12,7 +12,7 @@ I am a Master student in the [Committee on Computational and Applied Mathematics
 ## TDA Packages
 Topological data analysis(TDA) is new applied mathematics area that attracts a lot of scientists. There are many packages useful online for you to perform computation. I will list some of them below with their installation recommendation:
 
-Frist I recommend use python with version 3.7
+Frist, I recommend using python with version 3.7
 `conda create -n bats python=3.7`
 
 - **[BATS.py](https://bnels.github.io/BATS.py/#/installation)** 
