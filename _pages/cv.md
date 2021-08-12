@@ -48,7 +48,7 @@ Research Experience (unpublished)
   * researched homology group’s application in robots’ motion planning.
   * Utilizedcubicalhomologytocomputethenumberofworkingcyclesofnrobotsonsomesimplegraphsby writing algorithms in Python and found some relationships between graphs and discretized configuration space.
 
-* **[Functions of Perturbed Matrices, Febrarury 2019 - April 2019](../files/perturbed-matrix.pdf)**
+* **[Functions of Perturbed Matrices](../files/perturbed-matrix.pdf), Febrarury 2019 - April 2019**
   * Estimated the norm of f(A) − f(B) in terms of the norm of A − B and proved its boundedness on
 finite-dimensional spaces.
 
