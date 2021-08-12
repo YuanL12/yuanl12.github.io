@@ -44,7 +44,7 @@ Publications
 Research Experience (unpublished)
 ======
 
-* **Cubical Homology and its application in robots’ motion planning, July 2019 - May 2020**
+* **[Cubical Homology and its application in robots’ motion planning](files/files/LSTM-time-seris.pdf), July 2019 - May 2020**
   * researched homology group’s application in robots’ motion planning.
   * Utilizedcubicalhomologytocomputethenumberofworkingcyclesofnrobotsonsomesimplegraphsby writing algorithms in Python and found some relationships between graphs and discretized configuration space.
 
