@@ -44,25 +44,19 @@ Publications
 Research Experience (unpublished)
 ======
 
-* **Cubical Homology and its application in robots’ motion planning**
-  * July 2019 - May 2020
+* **Cubical Homology and its application in robots’ motion planning, July 2019 - May 2020**
   * researched homology group’s application in robots’ motion planning.
   * Utilizedcubicalhomologytocomputethenumberofworkingcyclesofnrobotsonsomesimplegraphsby writing algorithms in Python and found some relationships between graphs and discretized configuration space.
 
-**Functions of Perturbed Matrices**
-Febrarury 2019 - April 2019
-- Estimated the norm of f(A) − f(B) in terms of the norm of A − B and proved its boundedness on
+* **Functions of Perturbed Matrices, Febrarury 2019 - April 2019**
+  * Estimated the norm of f(A) − f(B) in terms of the norm of A − B and proved its boundedness on
 finite-dimensional spaces.
 
-**Time Series Prediction of Sales by LSTM**
-July 2018 - August 2018
-- Combined ARIMA in time series with deep learning.
-- Predicted future phone cases sales via an LSTM model implemented in Python, whose hyper-parameters
-are optimized by grid search.
-- Utilized both standard deviation of sales and the parameters of autoregressive models as the fitting
-features to create hybrid models.
-- Evaluated the performance of hybrid models to select the models with the most effective prediction of
-future sales.
+* **Time Series Prediction of Sales by LSTM, July 2018 - August 2018**
+  * Combined ARIMA in time series with deep learning.
+  * Predicted future phone cases sales via an LSTM model implemented in Python, whose hyper-parameters are optimized by grid search.
+  * Utilized both standard deviation of sales and the parameters of autoregressive models as the fitting features to create hybrid models.
+  * Evaluated the performance of hybrid models to select the models with the most effective prediction of future sales.
 
 <!-- Talks
 ======
