@@ -44,11 +44,10 @@ Publications
 Research Experience (unpublished)
 ======
 
-**Cubical Homology and its application in robots’ motion planning**
-July 2019 - May 2020
-- researched homology group’s application in robots’ motion planning.
-- Utilizedcubicalhomologytocomputethenumberofworkingcyclesofnrobotsonsomesimplegraphsby writing algorithms in Python and found some relationships between graphs and discretized configuration
-space.
+* **Cubical Homology and its application in robots’ motion planning**
+  * July 2019 - May 2020
+  * researched homology group’s application in robots’ motion planning.
+  * Utilizedcubicalhomologytocomputethenumberofworkingcyclesofnrobotsonsomesimplegraphsby writing algorithms in Python and found some relationships between graphs and discretized configuration space.
 
 **Functions of Perturbed Matrices**
 Febrarury 2019 - April 2019
