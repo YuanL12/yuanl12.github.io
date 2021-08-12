@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/2021-08-12-update-persistence
 excerpt: 'An algorithm for accelerating persistence homology computation.'
 date: 2021-08-12
+venue: 'empty'
 paperurl: 'https://arxiv.org/abs/2108.05022'
 ---
 
