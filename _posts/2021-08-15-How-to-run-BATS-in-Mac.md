@@ -7,7 +7,7 @@ tags:
   - C++
 ---
 
-Run BATS in linux is easy, but on Mac is hard. This blog will help you install that on Mac.
+Run BATS in Linux is easy, but on Mac is hard. The main problem is caused by different compliers in these two operation systems: _gcc_ for Linux and _clang_ for Mac. This blog will help you install and run it on Mac.
 
 ## C++ (BATS)
 If you use Linux OS, then simply run use the flag '-fopenmp' like
