@@ -22,7 +22,7 @@ g++-10 -o hello_omp.out hello_omp.cpp -fopenmp
 However, if you are not lucky enough, it probably cause some problems, because your g++ is not configured correctly (OpenMP might be the biggest problem). If so, please see below.
 
 > **_Attention_**:
-> If you use `g++ -o hello_omp.out hello_omp.cpp -fopenmp` in Mac, it will return an error like `clang: error: unsupported option '-fopenmp'`, and this is because g++ in Mac is default to use clang like `Apple clang version 12.0.0 (clang-1200.0.32.29)` in my case. You will need Homebrew to install GCC. The details of installation is listed below:
+> If you use `g++ -o hello_omp.out hello_omp.cpp -fopenmp` in Mac and get an error like `clang: error: unsupported option '-fopenmp'`, this is because g++ in Mac is default to use clang (e.g., `Apple clang version 12.0.0 (clang-1200.0.32.29)` in my case). You will need Homebrew to install GCC. The details of installation is listed below:
 
 
 - Install gcc by Homebrew
@@ -50,7 +50,7 @@ It is easy, simply add two choice of C++ and C complier before python installati
 ```
 CXX=g++-10 CC=gcc-10 python setup.py install
 ```
-If you have developed it, ie., changed the submodule BATS, then use
+If you have developed it, i.e., changed the submodule BATS, then use
 ```
 CXX=g++-10 CC=gcc-10 python setup.py build_ext --inplace
 CXX=g++-10 CC=gcc-10 python setup.py build_ext -f -j4
