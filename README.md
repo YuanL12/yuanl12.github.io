@@ -6,6 +6,7 @@ A Github Pages template for academic websites. This was forked (then detached) b
 # Instructions
 
 1. CV is in [_pages/cv.md](_pages/cv.md)
-2. Navigation Bar is in [_data/navigation.yml](_data/navigation.yml)
-3. Front page of yuanl12.github.io is in [_pages/about.md](_pages/about.md)
-4. To include a picture in a `md` file, use this form ![Editing a markdown file for a talk](/images/editing-talk.png)
+2. Blog in [_posts](_posts/)
+3. Navigation Bar is in [_data/navigation.yml](_data/navigation.yml)
+4. Front page of yuanl12.github.io is in [_pages/about.md](_pages/about.md)
+5. To include a picture in a `md` file, use this form ![Editing a markdown file for a talk](/images/editing-talk.png)
