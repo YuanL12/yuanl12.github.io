@@ -1,3 +1,12 @@
+---
+title: 'Fast Inverse Square Root Algorithm'
+date: 2021-08-15
+permalink: /posts/2021/08/Fast-Inverse-Square-Root-Algorithm/
+tags:
+  - Algorithm
+  - C++
+---
+
 # Fast Inverse Square Root algorithm
 This is a famous algorithm from Quake III. It utilizes
 - IEEE 754
