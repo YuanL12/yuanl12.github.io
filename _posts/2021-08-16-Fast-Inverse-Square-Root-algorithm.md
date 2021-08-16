@@ -32,26 +32,6 @@ float Q_rsqrt( float number )
 	return y;
 }
 ```
-.. code-block:: cpp
-
-   float Q_rsqrt( float number )
-	{
-		long i;
-		float x2, y;
-		const float threehalfs = 1.5F;
-
-		x2 = number * 0.5F;
-		y  = number;
-		i  = * ( long * ) &y;                       // evil floating point bit level hacking
-		i  = 0x5f3759df - ( i >> 1 );               // what the fuck? 
-		y  = * ( float * ) &i;
-		y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
-	//	y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration, this can be removed
-
-		return y;
-	}
-   
-
 
 
 ##  IEEE 754
@@ -102,7 +82,7 @@ $$
 \log_2(1 + \frac{M}{2^{23}} ) +  E - 127
 $$
 
-, and then apply tricks $log(1+x)  \approx x + \mu$, where $\mu = 0.0430 $ is the correction term to choosen to give the smallest supremum norm error.
+, and then apply tricks $log(1+x)  \approx x + \mu$, where $\mu = 0.0430 $ is the correction term to choosen to give the smallest maximum norm error.
 
 
 Thus,
