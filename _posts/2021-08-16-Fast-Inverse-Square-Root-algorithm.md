@@ -14,7 +14,7 @@ This is a famous algorithm from Quake III. It utilizes
 - Approximation of function $log(1+x)\approx x + \mu$, where $\mu = 0.0430 $ is a **mysterious** term.
 
 ## Code
-```
+```C++
 float Q_rsqrt( float number )
 {
 	long i;
@@ -45,8 +45,6 @@ Next, we define IEEE 754, which is a float number representation composed of thr
 - Mantissa(23-bits): represent mantissa number after decimal dot
 
 ### example
-0 00000011 
-positve 2^(3-127)
 ``` 
 85.125
 85 = 1010101
@@ -67,35 +65,49 @@ The IEEE 754 Single precision is:
 This can be written in hexadecimal form 42AA4000
 ```
 
-##  IEEE 754 with number
-We define the bits reprsentation of a number with E and M to be $2^{23}\times E + M = $ shift E by 23 dits and then add the bits in M into it.
+## IEEE 754 with bit representation
+We first define the bits reprsentation of a positive IEEE 754 number $a$ with E and M to be $a_i = 2^{23}\times E + M$, which is equivalent to shift E by 23 dits and then add the bits of M into it. 
+> **Note**: The bits reprsentation of a positive IEEE 754 number is also very easy to find. If `y` is a float type number (IEEE 754) like `float y;`, then by `long i = * (long *) &y`, `i` is the bits reprsentation of `y`. 
 
-Now, take logarithm with base 2 to 
+
+
+Now, given a positive IEEE 754 number with E and M, which is equal to 
 
 $$
-(1 + \frac{M}{2^{23}} ) \cdot 2^{E - 127}
+a = (1 + \frac{M}{2^{23}} ) \cdot 2^{E - 127}
 $$
 
-gives 
+, taking logarithm with base 2 gives 
 
 $$
 \log_2(1 + \frac{M}{2^{23}} ) +  E - 127
 $$
 
-, and then apply tricks $log(1+x)  \approx x + \mu$, where $\mu = 0.0430 $ is the correction term to choosen to give the smallest maximum norm error.
+, and then apply tricks $log(1+x)  \approx x + \mu$, where $\mu = \frac{1}{2} - \frac{1+ \ln(\ln 2)}{2 \ln 2}\approx0.0430$.
+ is the term computed from the approximation of smallest maximum norm error.
+
+> **How to compute $\mu$** : 
+> The mathematical problem is $\min_{m, \mu} \max_{x\in[0,1]} |h(x)|$, where $h(x) = \log_2(1+x) - (mx+\mu)$. The three possible maximum point is $x = 0,1,\theta$, where $\frac{\partial h}{\partial x} (\theta) = 0$. Then $m$ and $\mu$ is computed by solving $h(0) = h(1) = - h(\theta)$.   
 
 
-Thus,
+Finally,
 
 $$
-\log_2(1 + \frac{M}{2^{23}} ) +  E - 127\\
-\approx \frac{M}{2^{23}} + \mu + E - 127\\
-\approx \frac{M + 2^{23} \cdot E}{2^{23}} + \mu - 127
+\begin{aligned}
+\log_2(a)
+&=\log_2(1 + \frac{M}{2^{23}} ) +  E - 127\\
+&\approx \frac{M}{2^{23}} + \mu + E - 127\\
+&\approx \frac{M + 2^{23} \cdot E}{2^{23}} + \mu - 127\\
+& = \frac{a_i}{2^{23}} + \mu - 127,\\
+&\text{where $a_i$ is the bit representation of } a.
+\end{aligned}
+
+
 $$
 
-and note that the bit representation of a number is equal to its logarithm up to some scaling and shifting.
+shows that the bit representation of a number is closely related to its logarithm up to some scaling and shifting.
 
-## back to algorithm
+## Back to algorithm
 `float y`
 - IEEE 754
 - no bit manipulation
@@ -106,16 +118,16 @@ and note that the bit representation of a number is equal to its logarithm up to
 - has bit manipulation
 
 `i = (long) y`
-- convert float to long, eg, 3 <--3.33 
-- but lose so much information
+- The normal way of converting float to long, eg, 3 <--3.33 
+- but will lose so much information.
 
 `i = * (long *) &y`
-- convert the type of the orginal address without modifying the contents inside.
+- Using pointer to convert the type of the address to long without modifying the contents pointed to.
 - now `i` is y's bits representation, which is about equal to log(y) up to some scaling and shifting.
 
 `i = 0x5f3759df - ( i >> 1);`
 
-In order to compute $\frac{1}{\sqrt{y}}: = z $, it is easier to compute $\log(z)$, and 
+In order to compute $\frac{1}{\sqrt{y}}: = z$, it is easier to compute $\log(z)$, and 
 
 $$
 \begin{aligned}
@@ -126,14 +138,17 @@ $$
 \end{aligned}
 $$
 
-Since we only need to compute the bit representation of $z: M_z + 2^{23} \cdot E_z $, from above, it is equal to 
+Since we only need to compute the bit representation of $z: M_z + 2^{23} \cdot E_z$, from above, it is equal to 
 
 $$
 \begin{aligned}
+M_z + 2^{23} \cdot E_z
 = & \frac{3}{2} 2^{23} (127 - \mu) - \frac{1}{2} (M_y + 2^{23} \cdot E_y )\\
-= & \text{ 0x5f3759df}  - ( i >> 1);  
+= & \text{ 0x5f3759df}  - ( i >> 1)  
 \end{aligned}
 $$
+
+, where $i$ is the bit representation of $y$, and 0x5f3759df = $\frac{3}{2} 2^{23} (127 - \mu)$ and $\mu = \frac{1}{2} - \frac{1+ \ln(\ln 2)}{2 \ln 2}$.
 
 `y = * ( float * ) &i;`
 - convert back to a float number
@@ -141,9 +156,10 @@ $$
 `y = y * (threehalfs - ( x2 * y * y ) );`
 
 Newton Method:
-Used to find root of $f(x) = 0$, updated by $x_{new} = x - \frac{f(x)}{f'(x)} $.
+Used to find root of $f(x) = 0$, updated by
+$x_{new} = x - \frac{f(x)}{f'(x)}$.
 
-Here $f(y) = \frac{1}{y^2} - x =0 $, given $x$ we hope to find $y$. Thus,
+Here $f(y) = \frac{1}{y^2} - x =0$, given $x$ we hope to find $y$. Thus,
 
 $$
 \begin{aligned}
