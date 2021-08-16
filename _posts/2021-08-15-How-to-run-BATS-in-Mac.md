@@ -9,6 +9,7 @@ tags:
 
 Run BATS in linux is easy, but on Mac is hard. This blog will help you install that on Mac.
 
+## C++ (BATS)
 If you use Linux OS, then simply run use the flag '-fopenmp' like
 ```
 g++ -o hello_omp.out hello_omp.cpp -fopenmp
@@ -42,4 +43,17 @@ export PATH=/usr/local/bin:$PATH
 
 Now, you are free to compile it. 
 Finally, in order to use makefile, change CXX flags into `CXX = g++-10`.
+
+## Python(BATS.py)
+Note: Since BATS.py is a python extesion based on C++, you need to set the complier of C++ in your Mac correctly. Thus, you need to finish the above setting before continue.
+It is easy, simply add two choice of C++ and C complier before python installation.
+```
+CXX=g++-10 CC=gcc-10 python setup.py install
+```
+If you have developed it, ie., changed the submodule BATS, then use
+```
+CXX=g++-10 CC=gcc-10 python setup.py build_ext --inplace
+CXX=g++-10 CC=gcc-10 python setup.py build_ext -f -j4
+CXX=g++-10 CC=gcc-10 python setup.py install
+```
 
