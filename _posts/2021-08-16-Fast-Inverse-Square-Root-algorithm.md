@@ -32,7 +32,25 @@ float Q_rsqrt( float number )
 	return y;
 }
 ```
+.. code-block:: cpp
 
+   float Q_rsqrt( float number )
+	{
+		long i;
+		float x2, y;
+		const float threehalfs = 1.5F;
+
+		x2 = number * 0.5F;
+		y  = number;
+		i  = * ( long * ) &y;                       // evil floating point bit level hacking
+		i  = 0x5f3759df - ( i >> 1 );               // what the fuck? 
+		y  = * ( float * ) &i;
+		y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
+	//	y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration, this can be removed
+
+		return y;
+	}
+   
 
 
 
@@ -73,20 +91,28 @@ This can be written in hexadecimal form 42AA4000
 We define the bits reprsentation of a number with E and M to be $2^{23}\times E + M = $ shift E by 23 dits and then add the bits in M into it.
 
 Now, take logarithm with base 2 to 
+
 $$
 (1 + \frac{M}{2^{23}} ) \cdot 2^{E - 127}
 $$
+
 gives 
+
 $$
 \log_2(1 + \frac{M}{2^{23}} ) +  E - 127
 $$
-, and then apply tricks $log(1+x)  \approx x + \mu$, where $\mu = 0.0430 $ is the correction term to choosen to give the smallest supremum norm error. 
+
+, and then apply tricks $log(1+x)  \approx x + \mu$, where $\mu = 0.0430 $ is the correction term to choosen to give the smallest supremum norm error.
+
+
 Thus,
+
 $$
 \log_2(1 + \frac{M}{2^{23}} ) +  E - 127\\
 \approx \frac{M}{2^{23}} + \mu + E - 127\\
 \approx \frac{M + 2^{23} \cdot E}{2^{23}} + \mu - 127
 $$
+
 and note that the bit representation of a number is equal to its logarithm up to some scaling and shifting.
 
 ## back to algorithm
@@ -110,6 +136,7 @@ and note that the bit representation of a number is equal to its logarithm up to
 `i = 0x5f3759df - ( i >> 1);`
 
 In order to compute $\frac{1}{\sqrt{y}}: = z $, it is easier to compute $\log(z)$, and 
+
 $$
 \begin{aligned}
 \log(z) & = \frac{1}{2^{23}} (M_z + 2^{23} \cdot E_z ) + \mu - 127 \\
@@ -118,7 +145,9 @@ $$
 & =- \frac{1}{2} (\frac{1}{2^{23}} (M_y + 2^{23} \cdot E_y ) + \mu - 127) 
 \end{aligned}
 $$
+
 Since we only need to compute the bit representation of $z: M_z + 2^{23} \cdot E_z $, from above, it is equal to 
+
 $$
 \begin{aligned}
 = & \frac{3}{2} 2^{23} (127 - \mu) - \frac{1}{2} (M_y + 2^{23} \cdot E_y )\\
@@ -135,6 +164,7 @@ Newton Method:
 Used to find root of $f(x) = 0$, updated by $x_{new} = x - \frac{f(x)}{f'(x)} $.
 
 Here $f(y) = \frac{1}{y^2} - x =0 $, given $x$ we hope to find $y$. Thus,
+
 $$
 \begin{aligned}
 y_{new} & = y + \frac{y}{2} (1 - x y ^2) \\ &= y(\frac{3}{2} - \frac{x}{2} y ^2)
