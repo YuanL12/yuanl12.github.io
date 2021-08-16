@@ -13,6 +13,10 @@ This is a famous algorithm from Quake III. It utilizes
 - Newton method
 - Approximation of function $log(1+x)\approx x + \mu$, where $\mu = 0.0430 $ is a **mysterious** term.
 
+The key idea is to 
+1. use an approximation function of $log(1+x)$ and the property of IEEE 754 number to find an initial (almost correct) guess of the root of $f(x) = \frac{1}{\sqrt{x}} = 0$, and then 
+2. use Newtow method to further increase accuracy.
+
 ## Code
 ```C++
 float Q_rsqrt( float number )
