@@ -7,7 +7,6 @@ tags:
   - C++
 ---
 
-# Fast Inverse Square Root algorithm
 This is a famous algorithm from Quake III. It utilizes
 - IEEE 754
 - Newton method
