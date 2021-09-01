@@ -41,7 +41,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Research Experience (unpublished)
+Research Experience
 ======
 
 * **[Cubical Homology and its application in robots’ motion planning](../files/undergraduate-thesis.pdf), July 2019 - May 2020**
