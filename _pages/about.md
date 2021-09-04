@@ -14,3 +14,5 @@ I am a Master student in the [Committee on Computational and Applied Mathematics
 
 , where more and more cycles appear!
 
+## Repository
+This [repository](https://github.com/YuanL12/yuanl12.github.io) is forked from [AcademicPages GitHub Pages template](https://github.com/academicpages/academicpages.github.io). 
