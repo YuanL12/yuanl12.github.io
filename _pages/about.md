@@ -8,6 +8,7 @@ redirect_from:
 
 I am a Master student in the [Committee on Computational and Applied Mathematics](https://cam.uchicago.edu/) at the University of Chicago. I am interested in topological data analysis(TDA), scientific computation and machine learning.
 
+[rips_opt](../rips_opt.gif)
 
 ## TDA Packages
 Topological data analysis(TDA) is a new applied mathematics area that attracts a lot of scientists. There are many packages useful online for you to perform computation. I will list some of them below with their installation recommendation:
