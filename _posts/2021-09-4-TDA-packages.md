@@ -1,5 +1,12 @@
+---
+title: 'TDA Packages'
+date: 2021-09-04
+permalink: /posts/2021/09/TDA-packages/
+tags:
+  - TDA
+  - Python
+---
 
-## TDA Packages
 Topological data analysis(TDA) is a new applied mathematics area that attracts a lot of scientists. There are many packages useful online for you to perform computation. I will list some of them below with their installation recommendation:
 
 Frist, I recommend using python with version 3.7
