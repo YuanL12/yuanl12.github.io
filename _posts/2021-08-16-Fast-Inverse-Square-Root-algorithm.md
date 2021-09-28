@@ -1,4 +1,5 @@
 ---
+mathjax: true
 title: 'Fast Inverse Square Root Algorithm'
 date: 2021-08-16
 permalink: /posts/2021/08/Fast-Inverse-Square-Root-Algorithm/

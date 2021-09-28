@@ -18,5 +18,8 @@ main:
   - title: "CV"
     url: /cv/
     
+  - title: "Notes"
+    url: https://yuanl12.github.io/DL-Pytorch/index.html
+    
 #   - title: "Guide"
 #     url: /markdown/
