@@ -6,7 +6,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Master student in the [Committee on Computational and Applied Mathematics](https://cam.uchicago.edu/) at the University of Chicago. I am interested in topological data analysis(TDA), scientific computation and machine learning.
+I am a Master student in the [Committee on Computational and Applied Mathematics](https://cam.uchicago.edu/) at the University of Chicago. I am interested in Topological Data Analysis(TDA), Scientific Computation and Geometric Machine Learning.
 
 ## Recent work 
 - We are glad to release the [torch-TDA](https://github.com/CompTop/torch-tda) package! It will do automatic differentiation for topological data analysis.
