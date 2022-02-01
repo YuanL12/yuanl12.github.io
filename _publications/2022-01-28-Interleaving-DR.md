@@ -1,8 +1,8 @@
 ---
 title: "(Preprint) Topology-Preserving Dimensionality Reduction via Interleaving Optimization"
 collection: publications
-permalink: /publication/2022-01-28-Interleaving-DR.md
-excerpt: 'We develop an approach to perform dimensionality reduction via Interleaving optimization'
+permalink: /publication/2022-01-28-Interleaving-DR
+excerpt: 'We develop an approach to perform dimensionality reduction via Interleaving optimization.'
 date: 2022-01-28
 venue: 'preprint'
 paperurl: 'https://arxiv.org/abs/2201.13012'
