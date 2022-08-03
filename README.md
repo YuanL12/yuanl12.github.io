@@ -7,4 +7,5 @@ This Github Pages was forked (then detached) by [Stuart Geiger](https://github.c
 2. Blog in [_posts](_posts/)
 3. Navigation Bar is in [_data/navigation.yml](_data/navigation.yml)
 4. Front page of yuanl12.github.io is in [_pages/about.md](_pages/about.md)
-5. To include a picture in a `md` file, use this form ![Editing a markdown file for a talk](/images/editing-talk.png)
+5. Left side bar is in [_config.yml](_config.yml)
+6. To include a picture in a `md` file, use this form ![Editing a markdown file for a talk](/images/editing-talk.png)
