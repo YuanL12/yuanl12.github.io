@@ -6,7 +6,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Master student in the [Committee on Computational and Applied Mathematics](https://cam.uchicago.edu/) at the University of Chicago. I am interested in Topological Data Analysis(TDA), Scientific Computation and Geometric Machine Learning.
+I am an applied math Ph.D candidate in the University of California, Davis. I graduted with a MSc degree from [Committee on Computational and Applied Mathematics](https://cam.uchicago.edu/) at the University of Chicago and a BSc degree from Xi'an Jiaotong-Liverpool University and Liverpool University. I am interested in Topological Data Analysis(TDA) and Scientific Computation.
 
 ## Recent work
 - New pre-print released [Topology-Preserving Dimensionality Reduction via Interleaving Optimization](https://arxiv.org/abs/2201.13012) with [repository](https://github.com/CompTop/Interleaving-DR). 
