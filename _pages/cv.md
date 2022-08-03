@@ -11,9 +11,11 @@ redirect_from:
 
 Education
 ======
-* B.S. in Applied Mathematics, Xi'an Jiaotong-Liverpool University, 2016 - 2020
+
+* Ph.D candidate in Applied Mathematics, University of California - Davis, 2022 - 2026 (expected)
+* M.S. in Computational and Applied Mathematics, University of Chicago, 2020 - 2022
 * Visiting Student, Michigan State University, 2018 - 2019
-* M.S. in Computational and Applied Mathematics, University of Chicago, 2020 - 2022(expected)
+* B.S. in Applied Mathematics, Xi'an Jiaotong-Liverpool University, 2016 - 2020
 <!-- * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
  -->
 
@@ -34,6 +36,7 @@ Skills
 * Python
   * Pandas, Numpy and Pytorch  
 * C++
+* AWS EC2
 
 Publications
 ======
