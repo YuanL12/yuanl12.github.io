@@ -20,7 +20,7 @@ main:
 #     url: /cv/
 
   - title: "CV"
-    url: https://github.com/YuanL12/yuanl12.github.io/blob/master/files/CV_Job.pdf
+    url: https:///yuanl12.github.io/files/CV_Job.pdf
     
   - title: "Notes"
     url: https://yuanl12.github.io/DL-Pytorch/index.html
