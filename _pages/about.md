@@ -9,6 +9,10 @@ redirect_from:
 I am an applied math Ph.D candidate in the University of California, Davis. I graduted with a MSc degree from [Committee on Computational and Applied Mathematics](https://cam.uchicago.edu/) at the University of Chicago advised by Dr. [Bradley J. Nelson](https://bnels.github.io/) and a BSc degree from Xi'an Jiaotong-Liverpool University and Liverpool University advised by Dr. [Li Cai](https://www.xjtlu.edu.cn/en/departments/academic-departments/pure-mathematics/staff/li-cai). I am interested in Topological Data Analysis (TDA) and Scientific Computation.
 
 ## Recent work/projects
+<video controls="" width="800" height="500" muted="" loop="" autoplay="">
+<source src="https:///yuanl12.github.io/files/MOTS20-09-result.mp4" type="video/mp4">
+</video>
+
 - Object Dection with [YOLOv3 + MOT tracking](https:///yuanl12.github.io/files/MOTS20-09-result.mp4).
 - New pre-print released [Topology-Preserving Dimensionality Reduction via Interleaving Optimization](https://arxiv.org/abs/2201.13012) with [repository](https://github.com/CompTop/Interleaving-DR). 
 - New [torch-TDA](https://github.com/CompTop/torch-tda) package released! It will do automatic differentiation for topological data analysis.
