@@ -6,7 +6,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an applied math Ph.D candidate in the University of California, Davis. I graduted with a MSc degree from [Committee on Computational and Applied Mathematics](https://cam.uchicago.edu/) at the University of Chicago advised by Dr. [Bradley J. Nelson](https://bnels.github.io/) and a BSc degree from Xi'an Jiaotong-Liverpool University and Liverpool University advised by Dr. [Li Cai](https://www.xjtlu.edu.cn/en/departments/academic-departments/pure-mathematics/staff/li-cai). I am interested in Topological Data Analysis (TDA) and Scientific Computation.
+I am an applied math Ph.D candidate in the University of California, Davis. I graduted with a MSc degree from [Committee on Computational and Applied Mathematics](https://cam.uchicago.edu/) at the University of Chicago advised by Dr. [Bradley J. Nelson](https://bnels.github.io/) and a BSc degree from Xi'an Jiaotong-Liverpool University and Liverpool University advised by Dr. [Li Cai](https://www.xjtlu.edu.cn/en/departments/academic-departments/pure-mathematics/staff/li-cai). I am interested in Topological Data Analysis (TDA), geometric ML and scientific computation.
 
 ## Recent work/projects
 - Object Dection with [YOLOv3 + MOT tracking](https:///yuanl12.github.io/files/ezgif.com-gif-maker.gif).
