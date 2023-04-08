@@ -13,13 +13,12 @@ Send me an email if you want to chat or discuss research: luoyuan9809 at gmail.c
 
 
 ### Eduation
-- PhD in Applied Math 
-(UC Davis)
-- MSc in Computational and Applied Math 
-(University of Chicago, Advisor: Dr. [Bradley J. Nelson](https://bnels.github.io/))
-- BSc in Applied Math 
-(Xi'an Jiaotong-Liverpool University and University of Liverpool, 
-Advisor: Dr. [Li Cai](https://www.xjtlu.edu.cn/en/departments/academic-departments/pure-mathematics/staff/li-cai)) 
+- PhD in Applied Math (UC Davis) 2022-Now
+
+- MSc in Computational and Applied Math (UChicago, Advisor: Dr. [Bradley J. Nelson](https://bnels.github.io/)) 2020-2022
+  
+- BSc in Applied Math (Xi'an Jiaotong-Liverpool University and ULiverpool, 
+Advisor: Dr. [Li Cai](https://www.xjtlu.edu.cn/en/departments/academic-departments/pure-mathematics/staff/li-cai)) 2016-2020
 
 ## Recent work/projects
 - Object Dection with [YOLOv3 + MOT tracking](https:///yuanl12.github.io/files/ezgif.com-gif-maker.gif).
