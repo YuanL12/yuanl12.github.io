@@ -7,12 +7,12 @@ redirect_from:
 ---
 
 I am an applied math Ph.D student in the University of California, Davis. My name is pronounced as /ˌjuˈɑn ˈlu.oʊ/. 
-I am interested in Computational Topology(TDA) and Geometric ML. 
+I am interested in computational topology(TDA) and geometry, and their application in ML.
 
 Send me an email if you want to chat or discuss research: luoyuan9809 at gmail.com. 
 
 
-### Eduation
+### Education
 - PhD in Applied Math (UC Davis) 2022-Now
 
 - MSc in Computational and Applied Math (UChicago, Advisor: Dr. [Bradley J. Nelson](https://bnels.github.io/)) 2020-2022
