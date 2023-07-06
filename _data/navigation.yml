@@ -19,8 +19,8 @@ main:
 #   - title: "CV"
 #     url: /cv/
 
-  - title: "CV"
-    url: https:///yuanl12.github.io/files/CV_Job.pdf
+  # - title: "CV"
+  #   url: https:///yuanl12.github.io/files/CV_Job.pdf
     
   - title: "Notes"
     url: https://yuanl12.github.io/DL-Pytorch/index.html
