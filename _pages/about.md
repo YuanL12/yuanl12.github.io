@@ -11,7 +11,7 @@ I am an applied math Ph.D student in the UC Davis and interested in computationa
 Send me an email if you want to chat or discuss research: luoyuan9809 at gmail.com. 
 
 
-### Education
+## Education
 - PhD in Applied Math, 2022 - Now
   - UC Davis, Advisor: Dr. [Joel Hass](https://www.math.ucdavis.edu/~hass/)
 - MSc in Computational and Applied Math, 2020 - 2022
