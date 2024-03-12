@@ -24,4 +24,4 @@ Send me an email if you want to chat or discuss research: luoyuan9809 at gmail.c
 
 ## Publication/Arxiv
 - [Topology-Preserving Dimensionality Reduction via Interleaving Optimization](https://arxiv.org/abs/2201.13012) with [repository](https://github.com/CompTop/Interleaving-DR). 
-- [Accelerating Iterated Persistent Homology Computations with Warm Starts](https://arxiv.org/abs/2108.05022) with [repository](https://github.com/YuanL12/TDA_Updating_Persistence). [Nice demo](https://yuanl12.github.io/files/rips_opt.gif).
+- [Accelerating Iterated Persistent Homology Computations with Warm Starts](https://www.sciencedirect.com/science/article/pii/S0925772124000117) with [repository](https://github.com/YuanL12/TDA_Updating_Persistence). [Nice demo](https://yuanl12.github.io/files/rips_opt.gif).
