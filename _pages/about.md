@@ -6,7 +6,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an applied math Ph.D student at UC Davis and am interested in computational topology (TDA) and geometry, and their application in ML.
+I am an applied math Ph.D student at UC Davis and am interested in computational topology (TDA) and geometry.
 
 Email me if you want to chat or discuss research: luoyuan9809 at gmail.com. 
 
